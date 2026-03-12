@@ -274,9 +274,10 @@ a {
 
 @media (max-width: 900px) {
   .hero-inner {
-    grid-template-columns: 1fr !important;
-    gap: 48px !important;
+    grid-template-columns: 1fr;
+    gap: 48px;
   }
+  .hero-card { display: none; }
   .about-grid {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
@@ -300,7 +301,8 @@ a {
     padding: 16px !important;
   }
   .hero-name {
-    font-size: 52px !important;
+    font-size: clamp(36px, 11vw, 52px) !important;
+    word-break: break-word !important;
   }
   .hero-actions {
     flex-direction: column;
