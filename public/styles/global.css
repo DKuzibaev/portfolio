@@ -214,7 +214,6 @@ section {
 /* tablet */
 
 @media (max-width: 900px) {
-
   .container {
     padding: 0 24px;
   }
@@ -222,13 +221,11 @@ section {
   .section-header {
     margin-bottom: 50px;
   }
-
 }
 
 /* mobile */
 
 @media (max-width: 600px) {
-
   body {
     font-size: 15px;
   }
@@ -266,7 +263,6 @@ section {
     font-size: 11px;
     padding: 5px 10px;
   }
-
 }
 
 /* better mobile tap */
@@ -274,4 +270,55 @@ section {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 900px) {
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .contact-inner {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .hero-card {
+    display: none !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-card {
+    grid-template-columns: 36px 1fr auto !important;
+    gap: 12px !important;
+    padding: 16px !important;
+  }
+  .hero-name {
+    font-size: 52px !important;
+  }
+  .hero-actions {
+    flex-direction: column;
+  }
+  .contact-heading {
+    font-size: 32px !important;
+  }
+  .fact-row {
+    grid-template-columns: 120px 1fr !important;
+    padding: 14px 16px !important;
+  }
+  footer {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+    padding: 24px 18px !important;
+  }
+  .footer-tech {
+    display: none;
+  }
 }
